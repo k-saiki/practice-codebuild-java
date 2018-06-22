@@ -1,0 +1,16 @@
+version: 0.2
+
+#env:
+#  variables:
+
+phases:
+  install:
+    commands:
+      - echo echo Nothing to do in the install phase...
+  build:
+    commands:
+      - ./gradlew build
+
+artifacts:
+  files:
+    - build/libs/helloworld-0.0.1.jar

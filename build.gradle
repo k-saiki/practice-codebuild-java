@@ -8,14 +8,9 @@ repositories {
 }
 
 jar {
-    baseName = 'gs-gradle'
-    version =  '0.1.0'
-}
-
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
-
-dependencies {
-    compile "joda-time:joda-time:2.2"
-    testCompile "junit:junit:4.12"
+    baseName = 'helloworld'
+    version =  '0.0.1'
+    manifest {
+        attributes 'Main-Class': 'hello.HelloWorld'
+    }
 }
